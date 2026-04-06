@@ -1,0 +1,15 @@
+{
+  "name": "devops-lab-01",
+  "version": "1.0.0",
+  "description": "Repository này là kết quả của bài thực hành mô phỏng quy trình làm việc chuẩn mực trong môi trường phát triển phần mềm (DevOps). Dự án áp dụng Git workflow thực tế kết hợp với tích hợp liên tục (CI) bằng GitHub Actions và các thiết lập bảo vệ mã nguồn.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}
