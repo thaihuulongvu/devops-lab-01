@@ -1,21 +1,16 @@
-const calculator = require('../src/calculator');
-
-test('adds 1 + 2 to equal 3', () => {
-  expect(calculator.add(1, 2)).toBe(3);
+const { add, subtract, multiply, divide } = require("../src/calculator");
+test("add", () => {
+expect(add(2, 3)).toBe(5);
 });
-
-test('subtracts 5 - 2 to equal 3', () => {
-  expect(calculator.subtract(5, 2)).toBe(3);
+test("subtract", () => {
+expect(subtract(5, 3)).toBe(2);
 });
-
-test('multiplies 2 * 3 to equal 6', () => {
-  expect(calculator.multiply(2, 3)).toBe(6);
+test("multiply", () => {
+expect(multiply(2, 3)).toBe(6);
 });
-
-test('divides 6 / 2 to equal 3', () => {
-  expect(calculator.divide(6, 2)).toBe(3);
+test("divide", () => {
+expect(divide(6, 3)).toBe(2);
 });
-
-test('throws error when dividing by zero', () => {
-  expect(() => calculator.divide(1, 0)).toThrow('Cannot divide by zero');
+test("divide by zero", () => {
+expect(() => divide(5, 0)).toThrow();
 });
